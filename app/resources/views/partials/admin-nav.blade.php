@@ -26,9 +26,9 @@
                     <!-- Logo icon -->
                     <b>
                         <!-- Dark Logo icon -->
-                        <img src="{{asset('/backend/img/')}}" alt="school-page" class="dark-logo logo" height="60" width="60" />
+                        <img src="{{asset('/backend/img/logo.png')}}" alt="school-page" class="dark-logo logo" height="60" width="60" />
                         <!-- Light Logo icon -->
-                        <img src="{{asset('/backend/img/')}}" alt="homepage" class="light-logo logo" height="60" width="60" />
+                        <img src="{{asset('/backend/img/logo.png')}}" alt="homepage" class="light-logo logo" height="60" width="60" />
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
@@ -41,26 +41,7 @@
             <div class="navbar-collapse">
                 <!-- ============================================================== -->
                 <!-- toggle and nav items -->
-                <!-- ============================================================== -->
-                <ul class="navbar-nav mr-auto mt-md-0">
-                    <!-- This is  -->
-                    <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
-                    <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                    <!-- ============================================================== -->
-                    <!-- Search -->
-                    <!-- ============================================================== -->
-                    <li class="nav-item search-box">
-                        <a class="nav-link text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
-                        
-                        <!-- =============== SEARCH BAR =================== -->
-                        
-                        <input type="text" class="form-control" name="keyword" minlength="3" placeholder="Search student"> <a class="srh-btn"><i class="ti-close"></i></a>
-                        
-                        <!-- ============================================== -->
-                        
-                    </li>
-                    <li class="nav-item hidden-xs-down"><a class="nav-link" id="current_session_name" href="javascript:void(0)"></a> </li>
-                </ul>
+              
                 <!-- ============================================================== -->
                 <!-- User profile and search -->
                 <!-- ============================================================== -->
@@ -81,7 +62,7 @@
                     <!-- Profile -->
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="" alt="user" class="profile-pic" /></a>
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('/backend/img/logo.png')}}" alt="user" class="profile-pic" /></a>
                         <div class="dropdown-menu dropdown-menu-right scale-up">
                             <ul class="dropdown-user">
                                 <li>
@@ -117,11 +98,11 @@
         <!-- Sidebar scroll-->
         <div class="_scroll-sidebar" style="overflow: scroll; width: auto; height: 100%;">
             <!-- User profile -->
-            <div class="user-profile" style="background: url(<?= base_url('assets/images/background/images.jpg'); ?>) no-repeat;">
+            <div class="user-profile" style="background: url('{{asset('/backend/images/big/img1.jpg')}}') no-repeat;">
                 <!-- User profile image -->
-                <div class="profile-img"> <img src="" alt="user" /> </div>
+                <div class="profile-img"> <img src="{{asset('/backend/img/logo.png')}}" alt="user" /> </div>
                 <!-- User profile text-->
-                <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><?= $this->user_bio['first_name'].' '.$this->user_bio['surname']; ?></a>
+                <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown user-full-name" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"></a>
                     <div class="dropdown-menu animated flipInY">
                         <a href="" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
                         <a href="" class="dropdown-item"><i class="ti-wallet"></i> My Activity Log</a>
@@ -138,64 +119,11 @@
                         <a href="" aria-expanded="false"><i class="mdi mdi-gauge"></i>
                             <span class="hide-menu">Dashboard</span></a>
                     </li>
-                    <li class="nav-devider"></li>
-                    <li class="nav-small-cap">Manage website</li>
-                    <li>
-                        <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-users"></i>
-                            <span class="hide-menu">Students</span></a>
-                        <ul aria-expanded="false" class="collapse">
-                            <li><a class="waves-effect waves-dark" href="" title="Register a new student on the system" data-toggle="tooltip">Register Student</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Manage list of student's that fall in a set criteria" data-toggle="tooltip">Students List</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Manage students who have been withdrawn" data-toggle="tooltip">Withdrawn Students</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Manage students who have graduated" data-toggle="tooltip">Graduated Students</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="See List of all parents on the system" data-toggle="tooltip">Manage Parents</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-university"></i><span class="hide-menu">Class</span></a>
-                        <ul aria-expanded="false" class="collapse">
-                            <li><a class="waves-effect waves-dark" href="" title="View all class arms and perform specific tasks for any class arm" data-toggle="tooltip">Manage Class Arms</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Create, Edit or Delete Arm/Class Arm" data-toggle="tooltip">Classes and Arms</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Manage all class teachers on the system" data-toggle="tooltip">Class teachers</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Create, edit or delete class assignments" data-toggle="tooltip">Class Assignments</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" aria-expanded="false" title="Manage records in a past session/term" data-toggle="tooltip"><i class="fa fa-file-text"></i><span class="hide-menu">Past Records</span></a>
-                    </li>
-
-                   
-                    <li>
-                        <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-book"></i><span class="hide-menu">Subject</span></a>
-                        <ul aria-expanded="false" class="collapse">
-                            <li><a class="waves-effect waves-dark" href="">School Subjects</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Manage all subject teachers. (i.e. All Staff who have been assigned to one or more subjects)" data-toggle="tooltip">Subject Teachers</a></li>
-                            <li><a class="waves-effect waves-dark" href="" title="Manage Subject departments. Add, update or remove departments" data-toggle="tooltip">Departments</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Bill Payment</span></a>
-                        <ul aria-expanded="false" class="collapse">
-                            <li><a class="waves-effect waves-dark" href="">Manage Bills</a></li>
-                            <li><a class="waves-effect waves-dark" href="">Student Bills</a></li>
-                        
-                        </ul>
-                    </li>
+                 
                     <li class="nav-devider"></li>
                     <li class="nav-small-cap">ADMINISTRATIVE TASK</li>
     
-                    <?php
-                    if($this->is_super_admin) { ?>
-
-                        <li>
-                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Staff and Admin</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a class="waves-effect waves-dark" href="" title="See List of all staff on the system" data-toggle="tooltip">Manage Staff</a></li>
-                                <li><a class="waves-effect waves-dark" href="" title="See List of all administrators on the system" data-toggle="tooltip">Manage Admin</a></li>
-                            </ul>
-                        </li>
-                        <?php
-                    } ?>
+    
                     
                     <li>
                         <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-soccer"></i><span class="hide-menu">Sport House</span></a>

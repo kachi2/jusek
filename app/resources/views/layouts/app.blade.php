@@ -5,32 +5,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Jusek Schools') }}</title>
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+       	<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&amp;display=swap" rel="stylesheet">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+		<!-- BOOTSTRAP CSS -->
+		<link href="{{asset('/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+				
+		{{-- <!-- FONT ICONS -->
+		<link href="../../../../../use.fontawesome.com/releases/v5.11.0/{{asset('/frontend/css/all.css')}}" rel="stylesheet" crossorigin="anonymous">		
+		<link href="{{asset('/frontend/css/flaticon.css')}}" rel="stylesheet"> --}}
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+		<!-- PLUGINS STYLESHEET -->
+		<link href="{{asset('/frontend/css/menu.css')}}" rel="stylesheet">	
+		<link id="effect" href="{{asset('/frontend/css/dropdown-effects/fade-down.css')}}" media="all" rel="stylesheet">
+		<link href="{{asset('/frontend/css/magnific-popup.css')}}" rel="stylesheet">	
+		<link href="{{asset('/frontend/css/flexslider.css')}}" rel="stylesheet">
+		<link href="{{asset('/frontend/css/owl.carousel.min.css')}}" rel="stylesheet">
+		<link href="{{asset('/frontend/css/owl.theme.default.min.css')}}" rel="stylesheet">
+
+		<!-- ON SCROLL ANIMATION -->
+		<link href="{{asset('/frontend/css/animate.css')}}" rel="stylesheet">
+	
+		<!-- TEMPLATE CSS -->
+		<link href="{{asset('/frontend/css/style.css')}}" rel="stylesheet">
+
+        <!-- RESPONSIVE CSS -->
+		<link href="{{asset('/frontend/css/responsive.css')}}" rel="stylesheet"> 
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                </div>
-            </header>
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
-    </body>
-</html>
+@include('partials.nav')
+@yield('content')
+@include('partials.footer')
+
+    
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->	
+		<script src="{{asset('/frontend/js/jquery-3.3.1.min.js')}}"></script>
+		<script src="{{asset('/frontend/js/bootstrap.min.js')}}"></script>	
+		<script src="{{asset('/frontend/js/modernizr.custom.js')}}"></script>
+		<script src="{{asset('/frontend/js/jquery.easing.js')}}"></script>
+		<script src="{{asset('/frontend/js/jquery.appear.js')}}"></script>
+		<script src="{{asset('/frontend/js/menu.js')}}"></script>
+		<script src="{{asset('/frontend/js/materialize.js')}}"></script>	
+		<script src="{{asset('/frontend/js/jquery.scrollto.js')}}"></script>
+		<script src="{{asset('/frontend/js/jquery.countdown.min.js')}}"></script>
+		<script src="{{asset('/frontend/js/imagesloaded.pkgd.min.js')}}"></script>
+		<script src="{{asset('/frontend/js/isotope.pkgd.min.js')}}"></script>
+		<script src="{{asset('/frontend/js/jquery.flexslider.js')}}"></script>
+		<script src="{{asset('/frontend/js/owl.carousel.min.js')}}"></script>
+		<script src="{{asset('/frontend/js/jquery.magnific-popup.min.js')}}"></script>	
+		<script src="{{asset('/frontend/js/register-form.js')}}"></script>	
+		<script src="{{asset('/frontend/js/comment-form.js')}}"></script>	
+		<script src="{{asset('/frontend/js/jquery.validate.min.js')}}"></script>	
+		<script src="{{asset('/frontend/js/jquery.ajaxchimp.min.js')}}"></script>		
+		<script src="{{asset('/frontend/js/custom.js')}}"></script>
+	</body>
+</html>	
+

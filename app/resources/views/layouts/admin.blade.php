@@ -49,7 +49,7 @@
 
     <script>
         //Global variables
-        var site_url = '<?= site_url() ?>';
+        //var site_url = '';
         var base_url = '{{asset('')}}}';
 
         $(document).on('click', '.sidebartoggler', function(){
@@ -65,8 +65,8 @@
 
 
 
-@yield('partials.admin-nav')
-
+@include('partials.admin-nav')
+@yield('content')
 
 
 
