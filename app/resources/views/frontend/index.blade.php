@@ -1,26 +1,15 @@
 @extends('layouts.app')
 @section('content')
-
-
-
-
-
 			<!-- HERO-1
 			============================================= -->	
-			<section id="hero-1" class="hero-section division">
-
-				
+			<section id="hero-1" class="hero-section division">	
 				<!-- SLIDER -->
 				<div class="slider">
 			    	<ul class="slides">
-
-
 				     	<!-- SLIDE #1 -->
 				      	<li id="slide-1">
-
 					        <!-- Background Image -->
-				        	<img src="images/slider/slide-1.jpg" alt="slide-background">
-
+				        	<img src="{{asset('/frontend/images/slider/slide-1.jpg')}}" alt="slide-background">
 							<!-- Image Caption -->
 		       				<div class="caption d-flex align-items-center left-align">
 		       					<div class="container">
@@ -53,7 +42,7 @@
 				      	<li id="slide-2">
 
 				        	<!-- Background Image -->
-				        	<img src="images/slider/slide-2.jpg" alt="slide-background">
+				        	<img src="{{asset('/frontend/images/slider/slide-2.jpg')}}" alt="slide-background">
 
 							<!-- Image Caption -->
 	        				<div class="caption d-flex align-items-center right-align">
@@ -88,7 +77,7 @@
 				      	<li id="slide-3">
 
 				      		<!-- Background Image -->
-				        	<img src="images/slider/slide-3.jpg" alt="slide-background">
+				        	<img src="{{asset('/frontend/images/slider/slide-3.jpg')}}" alt="slide-background">
 
 				        	<!-- Image Caption -->
 		       			 	<div class="caption d-flex align-items-center right-align">
@@ -116,27 +105,18 @@
 					        </div>	<!-- End Image Caption -->
 
 				     	</li>	<!-- END SLIDE #3 -->
-
 				    </ul>
-			  	</div>	<!-- END SLIDER -->
-
-				
+			  	</div>	<!-- END SLIDER -->	
 			</section>	<!-- END HERO-1 -->	
-
-
-
 
 			<!-- ABOUT-1
 			============================================= -->
 			<section id="about-1" class="bg-05 about-section division">
 				<div class="container white-color">
 					<div class="row d-flex align-items-center">
-
-
 						<!-- ABOUT BOX #1 -->		
 						<div class="col-md-4">
 							<div class="abox-1 icon-xs">
-
 								<!-- Icon --> 
 								<span class="flaticon-004-computer"></span>
 
@@ -179,443 +159,22 @@
 									<h5 class="h5-md">Lifetime access</h5>
 									<p class="p-md">Learn on your schedule</p>
 								</div>
-
 							</div>
 						</div>	<!-- END ABOUT BOX #3 -->	
-
-
 					</div>    <!-- End row --> 	
 				</div>	   <!-- End container --> 	
 			</section>	<!-- End ABOUT-1 --> 
-
-
-
-
-			<!-- ABOUT-2
-			============================================= -->
-			<section id="about-2" class="wide-60 about-section division">
-				<div class="container">
-					<div class="row d-flex align-items-center">
-
-
-						<!-- ABOUT IMAGE -->
-						<div class="col-md-5 col-lg-6">
-							<div class="img-block pc-25 mb-40">
-								<img class="img-fluid" src="images/image-01.png" alt="about-image">
-					 		</div>
-						</div>
-
-
-						<!-- ABOUT TEXT -->
-					 	<div class="col-md-7 col-lg-6">
-					 		<div class="txt-block pc-25 mb-40">
-
-					 			<!-- Title -->	
-								<h3 class="h3-sm">Transform your life through online education</h3>
-
-								<!-- Text -->
-								<p>An enim nullam tempor sapien gravida donec porta and blandit ipsum enim justo integer velna vitae 
-									auctor integer congue magna and purus pretium risus ligula rutrum luctus ultrice 
-								</p> 
-
-								<!-- List -->	
-								<ul class="txt-list mb-15">
-
-									<li>Nullam rutrum eget nunc varius etiam mollis risus undo</li>
-													
-									<li>Integer congue magna at pretium purus pretium ligula at rutrum risus luctus dolor auctor 
-										ipsum blandit purus		
-									</li>
-
-									<li>Risus at congue etiam aliquam sapien egestas posuere</li>
-
-									<li>At pretium purus integer congue magna pretium ligula at ipsum blandit purus	rutrum risus 
-										luctus dolor auctor 	
-									</li>
-
-								</ul>
-
-					 		</div>
-					 	</div>	  <!-- END ABOUT TEXT -->
-
-
-					</div>    <!-- End row --> 	
-				</div>	   <!-- End container --> 	
-			</section>	<!-- End ABOUT-2 --> 
-
-
-
-
-			<!-- COURSES-3
-			============================================= -->
-			<section id="courses-3" class="bg-lightgrey wide-60 courses-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->	
-					<div class="row">	
-						<div class="col-md-12">
-							<div class="section-title mb-60">
-
-								<!-- Title 	-->	
-								<h3 class="h3-sm">Most Popular Courses</h3>	
-
-								<!-- Text -->	
-								<p class="p-md">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero 
-								   tempus, blandit posuere and ligula varius magna a porta
-								</p>
-
-								<!-- Button -->	
-								<div class="title-btn">
-									<a href="courses-list.html" class="btn btn-tra-grey rose-hover">View All Courses</a>
-								</div>
-
-							</div>	
-						</div>
-					</div>
-
-
-					<!-- COURSES HOLDER -->
-					<div class="row courses-grid">
-
-
-						<!-- COURSE #1 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-											
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-1-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">	
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>Languages</span>
-											<span>English</span>
-										</p>
-
-										<!-- Course Title -->
-										<h5 class="h5-xs">Beginner Level English - Foundations</h5>
-
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star-half-alt"></i>
-											<span>4.5 (26 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$149.99</span> $138.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #1 -->	
-
-
-						<!-- COURSE #2 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-2-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">	
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>Languages</span>
-											<span>English</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Diploma in Basic English Grammar - Revised 2019</h5>
-
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<span>5 (118 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$174.99</span> $59.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #2 -->							
-
-
-						<!-- COURSE #3 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-3-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>IT Managment</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Diploma in Information Technology Management</h5>												
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star-half-alt"></i>
-											<span>4.5 (72 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$119.99</span> $34.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #3 -->							
-
-
-						<!-- COURSE #4 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-										
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-4-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>SEO</span>
-											<span>Marketing</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Google AdWords for Beginners 2020</h5>
-
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<span>5 (281 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price">Free Course</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #4 -->								
-
-
-						<!-- COURSE #5 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-										
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-5-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>Design</span>
-											<span>WordPress</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Wordpress for Beginners - Master Wordpress Quickly</h5>
-
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<span>4.15 (58 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$194.99</span> $62.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #5 -->						
-
-
-						<!-- COURSE #6 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-										
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-9-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>Science</span>
-											<span>Diploma</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Industrial Engineering - Control Valve Basics</h5>
-
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<span>5 (31 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$149.99</span> $45.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #6 -->	
-
-
-						<!-- COURSE #7 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-										
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-8-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>Internet</span>
-											<span>Marketing</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Instagram Marketing 2020: A Step-By-Step to 10,000 Followers</h5>												
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<span>5 (374 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$169.99</span> $33.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #7 -->						
-
-
-						<!-- COURSE #8 -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<div class="cbox-1">
-								<a href="course-details.html">
-										
-									<!-- Image -->
-									<img class="img-fluid" src="images/courses/course-10-img.jpg" alt="course-preview" />
-
-									<!-- Text -->
-									<div class="cbox-4-txt">
-
-										<!-- Course Tags -->
-										<p class="course-tags">
-											<span>Science</span>
-											<span>Engines</span>
-										</p>
-
-										<!-- Title -->
-										<h5 class="h5-xs">Diesel Engine Cycles, Maintenance, & Control</h5>
-
-										<!-- Course Rating -->
-										<div class="course-rating clearfix">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<span>5 (374 Ratings)</span>
-										</div>
-
-										<!-- Course Price -->
-										<span class="course-price"><span class="old-price">$154.99</span> $41.99</span>
-
-									</div>
-
-								</a>
-							</div>
-						</div>	<!-- END COURSE #8 -->	
-
-
-					</div>	  <!-- END COURSES HOLDER -->
-				</div>     <!-- End container -->
-			</section>	<!-- END COURSES-3 -->
-
-
-
 
 			<!-- ABOUT-3
 			============================================= -->
 			<section id="about-3" class="pt-100 about-section division">
 				<div class="container">
 					<div class="row d-flex align-items-center">
-
-
 						<!-- ABOUT TEXT -->
 					 	<div class="col-md-7 col-lg-6">
 					 		<div class="txt-block pc-25">
-
 					 			<!-- Title -->	
 								<h3 class="h3-sm">Learn new personal & professional skills online</h3>
-
 								<!-- Text -->
 								<p>An enim nullam tempor sapien gravida donec porta and blandit ipsum enim justo integer velna vitae 
 									auctor integer congue magna and purus pretium risus ligula rutrum luctus ultrice 
@@ -631,110 +190,25 @@
 									</li>
 
 									<li>Risus at congue etiam aliquam sapien egestas posuere</li>
-
 								</ul>
-
 								<!-- Button -->
 								<a href="categories-list.html" class="btn btn-md btn-rose tra-black-hover">Start Learning Now</a>
-
 					 		</div>
 					 	</div>	  <!-- END ABOUT TEXT -->
-
-
 					 	<!-- ABOUT IMAGE -->
 						<div class="col-md-5 col-lg-6">
 							<div class="img-block">
 								<img class="img-fluid" src="images/image-02.png" alt="about-image">
 					 		</div>
 						</div>
-
-
 					</div>    <!-- End row --> 	
 				</div>	   <!-- End container --> 	
 			</section>	<!-- End ABOUT-3 --> 
-
-
-
-
-			<!-- SERVICES-6
-			============================================= -->
-			<section id="services-6" class="bg-03 wide-60 services-section division">
-				<div class="container white-color">
-
-
-					<!-- SERVICES TEXT -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1 text-center">
-							<div class="services-6-txt">
-
-								<!-- Title -->
-								<h3 class="h3-md">Get Quality Education with eTreeks</h3>	
-				
-								<!-- Text -->
-								<p class="p-md">Integer congue magna at pretium purus pretium ligula at rutrum luctus risus eros 
-								   dolor auctor ipsum blandit luctus purus vehicula magna a tempor laoreet
-								</p>
-
-								<!-- Button -->
-								<a href="#" class="btn btn-md btn-rose tra-white-hover">Start Learning Now!</a>
-
-							</div>
-						</div>
-					</div>	<!-- END SERVICES TEXT -->
-
-
-					<!-- SERVICE BOXES -->
-					<div class="row">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="row">
-
-								<!-- SERVICE BOX #1 -->		
-								<div class="sbox-6 icon-xl">
-									<span class="flaticon-031-select"></span>
-									<h5 class="h5-xs">Trending Courses</h5>	
-								</div>
-
-								<!-- SERVICE BOX #2 -->		
-								<div class="sbox-6 icon-xl">
-									<span class="flaticon-028-learning-1"></span>
-									<h5 class="h5-xs">Certified Teachers</h5>	
-								</div>
-
-								<!-- SERVICE BOX #3 -->		
-								<div class="sbox-6 icon-xl">
-									<span class="flaticon-006-diploma"></span>
-									<h5 class="h5-xs">Graduation Certificate</h5>	
-								</div>
-
-								<!-- SERVICE BOX #4 -->		
-								<div class="sbox-6 icon-xl">
-									<span class="flaticon-013-elearning-5"></span>
-									<h5 class="h5-xs">Online Course Facilities</h5>			
-								</div>
-
-								<!-- SERVICE BOX #5 -->	
-								<div class="sbox-6 icon-xl">
-									<span class="flaticon-001-book"></span>
-									<h5 class="h5-xs">Free Books & Library</h5>	
-								</div>
-
-							</div>
-						</div>
-					</div>	<!-- END SERVICE BOXES -->
-
-
-				</div>	   <!-- End container --> 	
-			</section>	<!-- End SERVICES-6 --> 
-
-
-
 
 			<!-- CATEGORIES-3
 			============================================= -->
 			<section id="categories-3" class="wide-100 categories-section division">
 				<div class="container">
-
-
 					<!-- SECTION TITLE -->	
 					<div class="row">	
 						<div class="col-md-12">
@@ -962,19 +436,13 @@
 										<div class="c3-box-icon">
 											<img src="https://jthemes.net/themes/html/etreeks/files/images/icons/categories/calculator.png" alt="category-icon" />
 										</div>
-
-										<!-- Text -->
-										<!-- Text -->
 										<div class="cbox-3-txt">
 											<h5 class="h5-md">Mathematics</h5>
 											<p>63 Courses</p>
 										</div>	
 
 									</a>
-								</div>	<!-- END CATEGORIE BOX #11 -->	
-
-
-								<!-- CATEGORIE BOX #12 -->
+								</div>
 								<div class="bg-olive c3-box text-center icon-md white-color">
 									<a href="https://jthemes.net/themes/html/etreeks/files/category-details.html">
 									
@@ -1003,321 +471,6 @@
 
 
 
-
-			<!-- COURSES-5
-			============================================= -->
-			<section id="courses-5" class="bg-lightgrey courses-section division">
-				<div class="container">
-
-
-					<!-- SECTION TITLE -->	
-					<div class="row">	
-						<div class="col-md-12">
-							<div class="section-title mb-60">
-
-								<!-- Title 	-->	
-								<h3 class="h3-sm">Best Online Courses of 2019</h3>	
-
-								<!-- Text -->	
-								<p class="p-md">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero 
-								   tempus, blandit posuere and ligula varius magna a porta
-								</p>
-								
-							</div>	
-						</div>
-					</div>
-
-
-					<div class="row">
-
-
-						<!-- COURSES LIST -->
-						<div class="col-lg-6">
-
-
-							<!-- COURSE #1 -->
-							<div class="cbox-5 b-bottom">
-								<a href="https://jthemes.net/themes/html/etreeks/files/course-details.html">
-									<div class="row">
-									
-										<!-- Course Description -->	
-										<div class="col-sm-7 cbox-5-txt">
-											<h5 class="h5-xs">English for Beginners: Intensive English Speaking Course</h5>
-											<p class="p-sm grey-color">54 Total Hours - Updated 2/2020</p> 
-
-											<!-- Rating -->
-											<div class="course-rating">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<span class="cr-rating">4.89 (331 Reviews)</span>
-											</div>
-										</div>
-
-										<!-- Course Data -->	
-										<div class="col-sm-3 cbox-5-data text-center clearfix">
-											<p class="grey-color"><i class="fas fa-users"></i> 7348</p>
-										</div>
-
-										<!-- Course Price -->	
-										<div class="col-sm-2 cbox-5-price text-right clearfix">
-											<span class="course-price">$34.99</span>
-											<span class="old-price">$64.99</span>
-										</div>
-
-									</div>
-								</a>
-							</div>	<!-- END COURSE #1 -->
-
-
-							<!-- COURSE #2 -->
-							<div class="cbox-5 b-bottom">
-								<a href="https://jthemes.net/themes/html/etreeks/files/course-details.html">
-									<div class="row">
-									
-										<!-- Course Description -->	
-										<div class="col-sm-7 cbox-5-txt">
-											<h5 class="h5-xs">Computer Networking - Wired & Wireless Networks</h5>
-											<p class="p-sm grey-color">83 Total Hours - Updated 12/2019</p> 
-
-											<!-- Rating -->
-											<div class="course-rating">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star-half-alt"></i>
-												<span class="cr-rating">4.19 (276 Reviews)</span>
-											</div>
-										</div>
-
-										<!-- Course Data -->	
-										<div class="col-sm-3 cbox-5-data text-center clearfix">
-											<p class="grey-color"><i class="fas fa-users"></i> 12035</p>
-										</div>
-
-										<!-- Course Price -->	
-										<div class="col-sm-2 cbox-5-price text-right clearfix">
-											<span class="course-price">$49.99</span>
-											<span class="old-price">$72.99</span>
-										</div>
-
-									</div>
-								</a>
-							</div>	<!-- END COURSE #2 -->
-
-
-							<!-- COURSE #3 -->
-							<div class="cbox-5">
-								<a href="https://jthemes.net/themes/html/etreeks/files/course-details.html">
-									<div class="row">
-									
-										<!-- Course Description -->	
-										<div class="col-sm-7 cbox-5-txt">
-											<h5 class="h5-xs">Spanish for Beginners. The Complete Method. Level 2</h5>
-											<p class="p-sm grey-color">62 Total Hours - Updated 01/2020</p> 
-
-											<!-- Rating -->
-											<div class="course-rating">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<span class="cr-rating">4.15 (458 Ratings)</span>
-											</div>
-										</div>
-
-										<!-- Course Data -->	
-										<div class="col-sm-3 cbox-5-data text-center clearfix">
-											<p class="grey-color"><i class="fas fa-users"></i> 10651</p>
-										</div>
-
-										<!-- Course Price -->	
-										<div class="col-sm-2 cbox-5-price text-right clearfix">
-											<span class="course-price">$29.99</span>
-											<span class="old-price">$74.99</span>
-										</div>
-
-									</div>
-								</a>
-							</div>	<!-- END COURSE #3 -->
-
-
-						</div>	<!-- END COURSES LIST -->
-
-
-						<!-- COURSES LIST -->
-						<div class="col-lg-6">
-
-
-							<!-- COURSE #4 -->
-							<div class="cbox-5 b-bottom">
-								<a href="https://jthemes.net/themes/html/etreeks/files/course-details.html">
-									<div class="row">
-									
-										<!-- Course Description -->	
-										<div class="col-sm-7 cbox-5-txt">
-											<h5 class="h5-xs">IT Management - Building Information Systems</h5>
-											<p class="p-sm grey-color">48 Total Hours - Updated 2/2020</p> 
-
-											<!-- Rating -->
-											<div class="course-rating">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star-half-alt"></i>
-												<span class="cr-rating">4.08 (264 Reviews)</span>
-											</div>
-										</div>
-
-										<!-- Course Data -->	
-										<div class="col-sm-3 cbox-5-data text-center clearfix">
-											<p class="grey-color"><i class="fas fa-users"></i> 15491</p>
-										</div>
-
-										<!-- Course Price -->	
-										<div class="col-sm-2 cbox-5-price text-right clearfix">
-											<span class="course-price">$22.99</span>
-											<span class="old-price">$44.99</span>
-										</div>
-
-									</div>
-								</a>
-							</div>	<!-- END COURSE #4 -->
-
-
-							<!-- COURSE #5 -->
-							<div class="cbox-5 b-bottom">
-								<a href="https://jthemes.net/themes/html/etreeks/files/course-details.html">
-									<div class="row">
-									
-										<!-- Course Description -->	
-										<div class="col-sm-7 cbox-5-txt">
-											<h5 class="h5-xs">Hidden Secrets Of Sales & Marketing - Revised 2019</h5>
-											<p class="p-sm grey-color">36 Total Hours - Updated 12/2019</p> 
-
-											<!-- Rating -->
-											<div class="course-rating">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<span class="cr-rating">4.79 (417 Reviews)</span>
-											</div>
-										</div>
-
-										<!-- Course Data -->	
-										<div class="col-sm-3 cbox-5-data text-center clearfix">
-											<p class="grey-color"><i class="fas fa-users"></i> 17035</p>
-										</div>
-
-										<!-- Course Price -->	
-										<div class="col-sm-2 cbox-5-price text-right clearfix">
-											<span class="course-price">$56.99</span>
-											<span class="old-price">$84.99</span>
-										</div>
-
-									</div>
-								</a>
-							</div>	<!-- END COURSE #5 -->
-
-
-							<!-- COURSE #6 -->
-							<div class="cbox-5">
-								<a href="https://jthemes.net/themes/html/etreeks/files/course-details.html">
-									<div class="row">
-									
-										<!-- Course Description -->	
-										<div class="col-sm-7 cbox-5-txt">
-											<h5 class="h5-xs">Biology - Evolution, Natural Selection and DNA</h5>
-											<p class="p-sm grey-color">28 Total Hours - Updated 11/2019</p> 
-
-											<!-- Rating -->
-											<div class="course-rating">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star-half-alt"></i>
-												<span class="cr-rating">4.42 (282 Ratings)</span>
-											</div>
-										</div>
-
-										<!-- Course Data -->	
-										<div class="col-sm-3 cbox-5-data text-center clearfix">
-											<p class="grey-color"><i class="fas fa-users"></i> 8163</p>
-										</div>
-
-										<!-- Course Price -->	
-										<div class="col-sm-2 cbox-5-price text-right clearfix">
-											<span class="course-price">$38.99</span>
-											<span class="old-price">$62.99</span>
-										</div>
-
-									</div>
-								</a>
-							</div>	<!-- END COURSE #6 -->
-							
-
-						</div>	<!-- END COURSES LIST -->
-
-
-					</div>	  <!-- End row -->
-
-
-				</div>     <!-- End container -->
-			</section>	<!-- END COURSES-5 -->
-
-
-
-
-			<!-- TESTIMONIALS-3
-			============================================= -->
-			<section id="reviews-3" class="bg-01 reviews-section division">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-
-
-							<!-- TESTIMONIAL TEXT -->
-							<div class="review-3">
-
-								<!-- Quote Icon -->
-								<div class="quote-ico"><img src="https://jthemes.net/themes/html/etreeks/files/images/left-quote.png" alt="quote-image" /></div>
-				
-								<!-- Testimonial Text -->
-								<p>An enim nullam tempor sapien gravida donec eTreeks - enim ipsum porta justo integer at odio velna and vitae 
-								   auctor integer congue magna at pretium purus pretium ligula rutrum luctus risus ultrice luctus blandit congue 
-								   magna. Sagittis congue augue egestas volutpat egestas magna consequat posuere nunc, eu porttitor neque 
-								</p>		
-
-								<!-- Testimonial Author -->
-								<div class="review-3-author">
-
-									<!-- Rating -->
-									<div class="tst-rating clearfix">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star-half-alt"></i>
-									</div>	
-
-									<h5 class="h5-md">Jennifer S.</h5>	
-									<span>Online Student (Public Relations)</span>
-								</div>	
-
-							</div>	<!-- END TESTIMONIAL TEXT -->	
-
-
-						</div>
-					</div>	   <!-- End row -->
-				</div>	    <!-- End container -->
-			</section>	 <!-- END TESTIMONIALS-3 -->
 
 
 
@@ -1554,16 +707,13 @@
 
 										<!-- Text -->
 										<div class="cbox-1-txt">
-
 											<!-- Course Tags -->
 											<p class="course-tags">
 												<span>Sowtware</span>
 												<span>Productivity</span>
 											</p>
-
 											<!-- Title -->
 											<h5 class="h5-xs">Excel Essentials: The Complete Excel Series - Level 1 & 2</h5>
-
 											<!-- Course Rating -->
 											<div class="course-rating clearfix">
 												<i class="fas fa-star"></i>
@@ -1738,106 +888,7 @@
 
 
 			
-			<!-- ABOUT-4
-			============================================= -->
-			<section id="about-4" class="wide-70 about-section division">
-				<div class="container">
-					
-
-					<!-- ABOUT TEXT -->
-					<div class="row">	
-					 	<div class="col-xl-10 offset-xl-1">
-					 		<div class="a4-txt">
-
-					 			<!-- Title -->	
-								<h5 class="h5-xl text-center">Our goal is to make online education work for everyone</h5>
-
-								<!-- Text -->
-								<p>Sagittis congue augue egestas volutpat egestas magna suscipit egestas magna ipsum vitae purus 
-								   efficitur ipsum primis and cubilia laoreet augue egestas luctus donec diam. Curabitur ac dapibus 
-								   libero mauris donec ociis and neque. Phasellus blandit tristique justo ut aliquam. Aliquam vitae 
-								   molestie nunc sapien justo, aliquet non molestie augue tempor sapien
-								</p>  
-
-							</div>
-						</div>
-					</div> 	<!-- END ABOUT TEXT -->
-
-
-					<!-- ABOUT IMAGE -->
-					<div class="row">	
-					 	<div class="col-md-12">
-							<div class="img-block">
-								<img class="img-fluid" src="https://jthemes.net/themes/html/etreeks/files/images/image-03.jpg" alt="about-image">
-							</div>
-						</div>
-					</div>
-
-
-					<!-- ABOUT BOXES -->
-					<div class="a4-boxes">
-						<div class="row d-flex align-items-center">
-
-							<!-- BOX #1 -->		
-							<div class="col-md-4">
-								<div class="abox-4 icon-sm">
-
-									<!-- Icon --> 
-									<span class="flaticon-004-computer"></span>
-
-									<!-- Text -->
-									<div class="abox-4-txt">
-										<h5 class="h5-md">Trusted Content</h5>
-										<p>Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</p>
-									</div>
-
-								</div>
-							</div>	<!-- END BOX #1 -->	
-
-
-							<!-- BOX #2 -->		
-							<div class="col-md-4">
-								<div class="abox-4 icon-sm">
-
-									<!-- Icon --> 
-									<span class="flaticon-028-learning-1"></span>
-
-									<!-- Text -->
-									<div class="abox-4-txt">
-										<h5 class="h5-md">Certified Teachers</h5>
-										<p>Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</p>
-									</div>
-
-								</div>
-							</div>	<!-- END BOX #2 -->	
-
-
-							<!-- BOX #3 -->		
-							<div class="col-md-4">
-								<div class="abox-4 icon-sm">
-
-									<!-- Icon --> 
-									<span class="flaticon-032-tablet"></span>
-
-									<!-- Text -->
-									<div class="abox-4-txt">
-										<h5 class="h5-md">Lifetime Access</h5>
-										<p>Congue augue egestas magna volutpat dictum suscipit ipsum egestas magna vitae purus</p>
-									</div>
-
-								</div>
-							</div>	<!-- END BOX #3 -->	
-
-
-						</div>  <!-- End row --> 
-					 </div>	  <!-- END ABOUT BOXES -->
-
-
-				</div>	   <!-- End container --> 	
-			</section>	<!-- End ABOUT-4 --> 
-
 			
-
 
 			<!-- VIDEO-3
 			============================================= -->	
